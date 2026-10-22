@@ -1,0 +1,23 @@
+path_to_processed_RBPs: "${RESULTS_DIR}/RNA_modifs/m6A/welch"
+output_directory: "${RESULTS_DIR}/RNA_modifs/m6A/welch/analysis"
+# Optional: only process CLIPs whose file name contains one of these (all CLIPs if omitted)
+# RBP_list:
+#   - "TARDBP"
+nt_before: -1000
+length_region: 50
+# Compartment label in the plot (rows) -> suffix identifying it in the treatment names
+compartments:
+  Nuclear: "_Nuc"
+  Cytoplasmic: "_Cyto"
+treatments:
+  - "Untreated_VCP_KI_Cyto"
+  - "Ml240_VCP_KI_Cyto"
+  - "Untreated_VCP_KI_Nuc"
+  - "Ml240_VCP_KI_Nuc"
+  - "Untreated_WT_Cyto"
+  - "Untreated_WT_Nuc"
+# Line color per condition (treatment name without the compartment suffix)
+palette_conditions:
+  Untreated_WT: "#2d609a"
+  Untreated_VCP_KI: "#8b1a5c"
+  Ml240_VCP_KI: "steelblue"

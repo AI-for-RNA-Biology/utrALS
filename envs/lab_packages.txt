@@ -1,0 +1,12 @@
+# Packages of the AI-for-RNA-Biology GitHub organisation used by utrALS, at their release tags.
+# Install them in the utrals environment without their dependencies (provided by envs/utrals.yml):
+#   conda run -n utrals pip install --no-deps -r envs/lab_packages.txt
+# (--no-deps: their pyproject.toml files require each other from GitHub without a version, which pip cannot
+# reconcile with the tags below.)
+apatools @ git+https://github.com/AI-for-RNA-Biology/apatools.git@v0.2.0
+bulkanalysis @ git+https://github.com/AI-for-RNA-Biology/bulkanalysis.git@v0.2.0
+cliptools @ git+https://github.com/AI-for-RNA-Biology/cliptools.git@v0.2.0
+genomemanager @ git+https://github.com/AI-for-RNA-Biology/genomemanager.git@v0.2.0
+kallistomanager @ git+https://github.com/AI-for-RNA-Biology/kallistomanager.git@v0.2.0
+omicstools @ git+https://github.com/AI-for-RNA-Biology/omicstools.git@v0.2.0
+scanalysis @ git+https://github.com/AI-for-RNA-Biology/scanalysis.git@v0.2.0

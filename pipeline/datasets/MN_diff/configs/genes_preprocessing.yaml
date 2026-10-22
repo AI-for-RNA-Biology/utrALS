@@ -1,0 +1,132 @@
+data_origin: kallisto_whole_transcriptome
+df_counts_path: "${DATA_DIR}/hg38_kallisto/counts_matrix_summed.csv"
+gene_names_path: "${ANNOT_DIR}/GENCODE/Gencode_geneNames_hg38V44.txt"
+gene_info_path: "${ANNOT_DIR}/Homo_sapiens.gene_info"
+treatments:
+  D0_Cytoplasmic_VCP:
+    - MUT1_D0_Cytoplasmic_VCP-R155C
+    - MUT2_D0_Cytoplasmic_VCP-R155C
+    - MUT3_D0_Cytoplasmic_VCP-R191Q
+    - MUT4_D0_Cytoplasmic_VCP-R191Q
+  D3_Cytoplasmic_VCP:
+    - MUT1_D3_Cytoplasmic_VCP-R155C
+    - MUT2_D3_Cytoplasmic_VCP-R155C
+    - MUT3_D3_Cytoplasmic_VCP-R191Q
+    - MUT4_D3_Cytoplasmic_VCP-R191Q
+  D7_Cytoplasmic_VCP:
+    - MUT1_D7_Cytoplasmic_VCP-R155C
+    - MUT2_D7_Cytoplasmic_VCP-R155C
+    - MUT3_D7_Cytoplasmic_VCP-R191Q
+    - MUT4_D7_Cytoplasmic_VCP-R191Q
+  D14_Cytoplasmic_VCP:
+    - MUT1_D14_Cytoplasmic_VCP-R155C
+    - MUT2_D14_Cytoplasmic_VCP-R155C
+    - MUT3_D14_Cytoplasmic_VCP-R191Q
+    - MUT4_D14_Cytoplasmic_VCP-R191Q
+  D22_Cytoplasmic_VCP:
+    - MUT1_D22_Cytoplasmic_VCP-R155C
+    - MUT2_D22_Cytoplasmic_VCP-R155C
+    - MUT3_D22_Cytoplasmic_VCP-R191Q
+    - MUT4_D22_Cytoplasmic_VCP-R191Q
+  D35_Cytoplasmic_VCP:
+    - MUT1_D35_Cytoplasmic_VCP-R155C
+    - MUT2_D35_Cytoplasmic_VCP-R155C
+    - MUT3_D35_Cytoplasmic_VCP-R191Q
+    - MUT4_D35_Cytoplasmic_VCP-R191Q
+  D0_Cytoplasmic_Wildtype:
+    - CTRL1_D0_Cytoplasmic_Wildtype
+    - CTRL3_D0_Cytoplasmic_Wildtype
+    - CTRL4_D0_Cytoplasmic_Wildtype
+    - CTRL5_D0_Cytoplasmic_Wildtype
+  D3_Cytoplasmic_Wildtype:
+    - CTRL1_D3_Cytoplasmic_Wildtype
+    - CTRL3_D3_Cytoplasmic_Wildtype
+    - CTRL4_D3_Cytoplasmic_Wildtype
+    - CTRL5_D3_Cytoplasmic_Wildtype
+  D7_Cytoplasmic_Wildtype:
+    - CTRL1_D7_Cytoplasmic_Wildtype
+    - CTRL3_D7_Cytoplasmic_Wildtype
+    - CTRL4_D7_Cytoplasmic_Wildtype
+    - CTRL5_D7_Cytoplasmic_Wildtype
+  D14_Cytoplasmic_Wildtype:
+    - CTRL1_D14_Cytoplasmic_Wildtype
+    - CTRL3_D14_Cytoplasmic_Wildtype
+    - CTRL4_D14_Cytoplasmic_Wildtype
+    - CTRL5_D14_Cytoplasmic_Wildtype
+  D22_Cytoplasmic_Wildtype:
+    - CTRL1_D22_Cytoplasmic_Wildtype
+    - CTRL3_D22_Cytoplasmic_Wildtype
+    - CTRL4_D22_Cytoplasmic_Wildtype
+    - CTRL5_D22_Cytoplasmic_Wildtype
+  D35_Cytoplasmic_Wildtype:
+    - CTRL1_D35_Cytoplasmic_Wildtype
+    - CTRL3_D35_Cytoplasmic_Wildtype
+    - CTRL4_D35_Cytoplasmic_Wildtype
+    - CTRL5_D35_Cytoplasmic_Wildtype
+  D0_Nuclear_VCP:
+    - MUT1_D0_Nuclear_VCP-R155C
+    - MUT2_D0_Nuclear_VCP-R155C
+    - MUT3_D0_Nuclear_VCP-R191Q
+    - MUT4_D0_Nuclear_VCP-R191Q
+  D3_Nuclear_VCP:
+    - MUT1_D3_Nuclear_VCP-R155C
+    - MUT2_D3_Nuclear_VCP-R155C
+    - MUT3_D3_Nuclear_VCP-R191Q
+    - MUT4_D3_Nuclear_VCP-R191Q
+  D7_Nuclear_VCP:
+    - MUT1_D7_Nuclear_VCP-R155C
+    - MUT2_D7_Nuclear_VCP-R155C
+    - MUT3_D7_Nuclear_VCP-R191Q
+    - MUT4_D7_Nuclear_VCP-R191Q
+  D14_Nuclear_VCP:
+    - MUT1_D14_Nuclear_VCP-R155C
+    - MUT2_D14_Nuclear_VCP-R155C
+    - MUT3_D14_Nuclear_VCP-R191Q
+    - MUT4_D14_Nuclear_VCP-R191Q
+  D22_Nuclear_VCP:
+    - MUT1_D22_Nuclear_VCP-R155C
+    - MUT2_D22_Nuclear_VCP-R155C
+    - MUT3_D22_Nuclear_VCP-R191Q
+    - MUT4_D22_Nuclear_VCP-R191Q
+  D35_Nuclear_VCP:
+    - MUT1_D35_Nuclear_VCP-R155C
+    - MUT2_D35_Nuclear_VCP-R155C
+    - MUT3_D35_Nuclear_VCP-R191Q
+    - MUT4_D35_Nuclear_VCP-R191Q
+  D0_Nuclear_Wildtype:
+    - CTRL1_D0_Nuclear_Wildtype
+    - CTRL3_D0_Nuclear_Wildtype
+    - CTRL4_D0_Nuclear_Wildtype
+    - CTRL5_D0_Nuclear_Wildtype
+  D3_Nuclear_Wildtype:
+    - CTRL1_D3_Nuclear_Wildtype
+    - CTRL3_D3_Nuclear_Wildtype
+    - CTRL4_D3_Nuclear_Wildtype
+    - CTRL5_D3_Nuclear_Wildtype
+  D7_Nuclear_Wildtype:
+    - CTRL1_D7_Nuclear_Wildtype
+    - CTRL3_D7_Nuclear_Wildtype
+    - CTRL4_D7_Nuclear_Wildtype
+    - CTRL5_D7_Nuclear_Wildtype
+  D14_Nuclear_Wildtype:
+    - CTRL1_D14_Nuclear_Wildtype
+    - CTRL3_D14_Nuclear_Wildtype
+    - CTRL4_D14_Nuclear_Wildtype
+    - CTRL5_D14_Nuclear_Wildtype
+  D22_Nuclear_Wildtype:
+    - CTRL1_D22_Nuclear_Wildtype
+    - CTRL3_D22_Nuclear_Wildtype
+    - CTRL4_D22_Nuclear_Wildtype
+    - CTRL5_D22_Nuclear_Wildtype
+  D35_Nuclear_Wildtype:
+    - CTRL1_D35_Nuclear_Wildtype
+    - CTRL3_D35_Nuclear_Wildtype
+    - CTRL4_D35_Nuclear_Wildtype
+    - CTRL5_D35_Nuclear_Wildtype
+path_to_results: "${RESULTS_DIR}/genes_preprocessing"
+figures_extension: "pdf"
+pct_in_treatment: 0.75
+remove_outliers: False
+quantile_threshold: 0.95
+background_quantile: True
+

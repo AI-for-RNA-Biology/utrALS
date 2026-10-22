@@ -1,0 +1,14 @@
+__pycache__/
+# local data locations (template: paths.env.example)
+paths.env
+# build artefacts of the editable install (pip install -e .)
+*.egg-info/
+build/
+# Figures/ is written by the notebooks (see Figures/README.md)
+Figures/
+*.csv
+# Tables/ (tables saved by the notebooks, see Tables/README.md) is versioned, .csv files included
+!Tables/**/*.csv
+# lock / temporary files of helpers.register_table
+Tables/.*.lock
+Tables/.*.tmp

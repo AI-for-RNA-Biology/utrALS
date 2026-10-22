@@ -1,0 +1,21 @@
+data_origin: kallisto_whole_transcriptome
+df_counts_path: "${DATA_DIR}/hg38_kallisto"
+gene_names_path: "${ANNOT_DIR}/GENCODE/Gencode_geneNames_hg38V44.txt"
+gene_info_path: "${ANNOT_DIR}/Homo_sapiens.gene_info"
+treatments: 
+  CTRL_CYTO:
+    - "SRR12899407"
+    - "SRR12899408"
+  VCP_CYTO:
+    - "SRR12899409"
+    - "SRR12899410"
+  CTRL_NUC:
+    - "SRR12899403"
+    - "SRR12899404"
+  VCP_NUC:
+    - "SRR12899405"
+    - "SRR12899406"
+path_to_results: "${RESULTS_DIR}/genes_preprocessing"
+figures_extension: "pdf"
+pct_in_treatment: 0.75
+remove_outliers: False

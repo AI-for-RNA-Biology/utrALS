@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=64"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "utrals"
+version = "0.1.0"
+description = "Code behind the paper figures on RBP binding and 3' UTR isoform usage in ALS motor neurons"
+requires-python = ">=3.10"
+# No dependencies are declared: the conda environments of envs/ provide them (utrals: notebooks and most
+# scripts; bioinfo: m6A-switch analysis, which needs pysam and ViennaRNA). Install into an existing environment with
+#   pip install --no-deps --no-build-isolation -e .
+# The install must be editable (-e): utrals.paths locates paths.env, Figures/, Tables/ and cache/ from its own path
+# in the repository.
+dependencies = []
+
+[tool.setuptools.packages.find]
+where = ["src"]

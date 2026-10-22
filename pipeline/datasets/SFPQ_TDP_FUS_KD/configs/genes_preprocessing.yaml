@@ -1,0 +1,49 @@
+data_origin: kallisto_whole_transcriptome
+df_counts_path: "${DATA_DIR}/hg38_kallisto"
+gene_names_path: "${ANNOT_DIR}/GENCODE/Gencode_geneNames_hg38V44.txt"
+gene_info_path: "${ANNOT_DIR}/Homo_sapiens.gene_info"
+treatments:
+  Untreated_Cyto: 
+    - 'TYZ4001A1'
+    - 'TYZ4001A11'
+    - 'TYZ4001A6'
+  Scramble_Cyto:
+    - 'TYZ4001A12'
+    - 'TYZ4001A2'
+    - 'TYZ4001A7'
+  SFPQ_KD_Cyto:
+    - 'TYZ4001A13'
+    - 'TYZ4001A3'
+    - 'TYZ4001A8'
+  TDP43_KD_Cyto:
+    - 'TYZ4001A14'
+    - 'TYZ4001A4'
+    - 'TYZ4001A9'
+  FUS_KD_Cyto: 
+    - 'TYZ4001A10'
+    - 'TYZ4001A15'
+    - 'TYZ4001A5'
+  Untreated_Nuc: 
+    - 'TYZ4001A16'
+    - 'TYZ4001A21'
+    - 'TYZ4001A26'
+  Scramble_Nuc:
+    - 'TYZ4001A17'
+    - 'TYZ4001A22'
+    - 'TYZ4001A27'
+  SFPQ_KD_Nuc:
+    - 'TYZ4001A18'
+    - 'TYZ4001A23'
+    - 'TYZ4001A28'
+  TDP43_KD_Nuc:
+    - 'TYZ4001A19'
+    - 'TYZ4001A24'
+    - 'TYZ4001A29'
+  FUS_KD_Nuc: 
+    - 'TYZ4001A20'
+    - 'TYZ4001A25'
+    - 'TYZ4001A30'  
+path_to_results: "${RESULTS_DIR}/genes_preprocessing"
+figures_extension: "pdf"
+pct_in_treatment: 0.75
+remove_outliers: False

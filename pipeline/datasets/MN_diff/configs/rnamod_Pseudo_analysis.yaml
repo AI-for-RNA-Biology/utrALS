@@ -1,0 +1,133 @@
+# welch Analysis Pipeline Configuration
+
+# Input paths
+path_to_processed_RBPs: "${RESULTS_DIR}/RNA_modifs/Pseudo/welch"
+
+# Output directory
+output_directory: "${RESULTS_DIR}/RNA_modifs/Pseudo/welch/analysis"
+
+# Analysis parameters
+nb_nucleotides_upstream: -1000
+nb_nucleotides_downstream: 200
+length_region: 50
+
+# Days and pairs
+days:
+  - "D0"
+  - "D3"
+  - "D7"
+  - "D14"
+  - "D22"
+  - "D35"
+
+days_pairs:
+  - ["D0", "D3"]
+  - ["D3", "D7"]
+  - ["D7", "D14"]
+  - ["D14", "D22"]
+  - ["D22", "D35"]
+
+# Conditions
+compartments:
+  - "Nuclear"
+  - "Cytoplasmic"
+
+mutations:
+  - "Wildtype"
+  - "VCP"
+
+# Treatment conditions
+treatments:
+  - "D0_Cytoplasmic_VCP"
+  - "D0_Cytoplasmic_Wildtype"
+  - "D0_Nuclear_VCP"
+  - "D0_Nuclear_Wildtype"
+  - "D3_Cytoplasmic_VCP"
+  - "D3_Cytoplasmic_Wildtype"
+  - "D3_Nuclear_VCP"
+  - "D3_Nuclear_Wildtype"
+  - "D7_Cytoplasmic_VCP"
+  - "D7_Cytoplasmic_Wildtype"
+  - "D7_Nuclear_VCP"
+  - "D7_Nuclear_Wildtype"
+  - "D14_Cytoplasmic_VCP"
+  - "D14_Cytoplasmic_Wildtype"
+  - "D14_Nuclear_VCP"
+  - "D14_Nuclear_Wildtype"
+  - "D22_Cytoplasmic_VCP"
+  - "D22_Cytoplasmic_Wildtype"
+  - "D22_Nuclear_VCP"
+  - "D22_Nuclear_Wildtype"
+  - "D35_Cytoplasmic_VCP"
+  - "D35_Cytoplasmic_Wildtype"
+  - "D35_Nuclear_VCP"
+  - "D35_Nuclear_Wildtype"
+
+# Color palette for days
+palette_days:
+  D0: "#1f77b4"
+  D3: "#0ea3ff"
+  D7: "#c4dbdf"
+  D14: "#a5baa3c5"
+  D22: "#67b46b"
+  D35: "#126e02"
+
+# Heatmap settings
+heatmap_top_n: 50  # Number of top RBPs to display in heatmaps
+
+# Specific pairs for heatmap generation
+# Format: pairs_{type}_{day1}_{compartment}_{mutation}_vs_{day2}_{compartment}_{mutation}
+# Leave empty to skip heatmap generation, or add specific pairs:
+pairs_for_heatmaps:
+  # Nuclear Wildtype
+  - "pairs_distals_D0_Nuclear_Wildtype_vs_D3_Nuclear_Wildtype"
+  - "pairs_distals_D3_Nuclear_Wildtype_vs_D7_Nuclear_Wildtype"
+  - "pairs_distals_D7_Nuclear_Wildtype_vs_D14_Nuclear_Wildtype"
+  - "pairs_distals_D14_Nuclear_Wildtype_vs_D22_Nuclear_Wildtype"
+  - "pairs_distals_D22_Nuclear_Wildtype_vs_D35_Nuclear_Wildtype"
+  - "pairs_proximals_D0_Nuclear_Wildtype_vs_D3_Nuclear_Wildtype"
+  - "pairs_proximals_D3_Nuclear_Wildtype_vs_D7_Nuclear_Wildtype"
+  - "pairs_proximals_D7_Nuclear_Wildtype_vs_D14_Nuclear_Wildtype"
+  - "pairs_proximals_D14_Nuclear_Wildtype_vs_D22_Nuclear_Wildtype"
+  - "pairs_proximals_D22_Nuclear_Wildtype_vs_D35_Nuclear_Wildtype"
+
+  # Nuclear VCP
+  - "pairs_distals_D0_Nuclear_VCP_vs_D3_Nuclear_VCP"
+  - "pairs_distals_D3_Nuclear_VCP_vs_D7_Nuclear_VCP"
+  - "pairs_distals_D7_Nuclear_VCP_vs_D14_Nuclear_VCP"
+  - "pairs_distals_D14_Nuclear_VCP_vs_D22_Nuclear_VCP"
+  - "pairs_distals_D22_Nuclear_VCP_vs_D35_Nuclear_VCP"
+  - "pairs_proximals_D0_Nuclear_VCP_vs_D3_Nuclear_VCP"
+  - "pairs_proximals_D3_Nuclear_VCP_vs_D7_Nuclear_VCP"
+  - "pairs_proximals_D7_Nuclear_VCP_vs_D14_Nuclear_VCP"
+  - "pairs_proximals_D14_Nuclear_VCP_vs_D22_Nuclear_VCP"
+  - "pairs_proximals_D22_Nuclear_VCP_vs_D35_Nuclear_VCP"
+
+  # WT Cyto
+  - "pairs_distals_D0_Cytoplasmic_Wildtype_vs_D3_Cytoplasmic_Wildtype"
+  - "pairs_distals_D3_Cytoplasmic_Wildtype_vs_D7_Cytoplasmic_Wildtype"
+  - "pairs_distals_D7_Cytoplasmic_Wildtype_vs_D14_Cytoplasmic_Wildtype"
+  - "pairs_distals_D14_Cytoplasmic_Wildtype_vs_D22_Cytoplasmic_Wildtype"
+  - "pairs_distals_D22_Cytoplasmic_Wildtype_vs_D35_Cytoplasmic_Wildtype"
+  - "pairs_proximals_D0_Cytoplasmic_Wildtype_vs_D3_Cytoplasmic_Wildtype"
+  - "pairs_proximals_D3_Cytoplasmic_Wildtype_vs_D7_Cytoplasmic_Wildtype"
+  - "pairs_proximals_D7_Cytoplasmic_Wildtype_vs_D14_Cytoplasmic_Wildtype"
+  - "pairs_proximals_D14_Cytoplasmic_Wildtype_vs_D22_Cytoplasmic_Wildtype"
+  - "pairs_proximals_D22_Cytoplasmic_Wildtype_vs_D35_Cytoplasmic_Wildtype"
+
+  # VCP Cyto
+  - "pairs_distals_D0_Cytoplasmic_VCP_vs_D3_Cytoplasmic_VCP"
+  - "pairs_distals_D3_Cytoplasmic_VCP_vs_D7_Cytoplasmic_VCP"
+  - "pairs_distals_D7_Cytoplasmic_VCP_vs_D14_Cytoplasmic_VCP"
+  - "pairs_distals_D14_Cytoplasmic_VCP_vs_D22_Cytoplasmic_VCP"
+  - "pairs_distals_D22_Cytoplasmic_VCP_vs_D35_Cytoplasmic_VCP"
+  - "pairs_proximals_D0_Cytoplasmic_VCP_vs_D3_Cytoplasmic_VCP"
+  - "pairs_proximals_D3_Cytoplasmic_VCP_vs_D7_Cytoplasmic_VCP"
+  - "pairs_proximals_D7_Cytoplasmic_VCP_vs_D14_Cytoplasmic_VCP"
+  - "pairs_proximals_D14_Cytoplasmic_VCP_vs_D22_Cytoplasmic_VCP"
+  - "pairs_proximals_D22_Cytoplasmic_VCP_vs_D35_Cytoplasmic_VCP"
+
+  # Control vs VCP
+  - "pairs_proximals_D35_Nuclear_Wildtype_vs_D35_Nuclear_VCP"
+  - "pairs_distals_D35_Nuclear_Wildtype_vs_D35_Nuclear_VCP"
+  

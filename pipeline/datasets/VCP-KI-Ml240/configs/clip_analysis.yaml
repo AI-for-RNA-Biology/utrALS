@@ -1,0 +1,26 @@
+path_to_processed_RBPs: "${RESULTS_DIR}/3UTR_analysis/CLIP"
+output_directory: "${RESULTS_DIR}/3UTR_analysis/CLIP/analysis"
+# Optional: only process CLIPs whose file name contains one of these (all CLIPs if omitted)
+# RBP_list:
+#   - "TARDBP"
+nt_before: -1000
+length_region: 50
+# window of the stop codon integration (clip_stop_codon_integration)
+stop_codon_nt_before: -100
+stop_codon_length_region: 25
+# Compartment label in the plot (rows) -> suffix identifying it in the treatment names
+compartments:
+  Nuclear: "_Nuc"
+  Cytoplasmic: "_Cyto"
+treatments:
+  - "Untreated_VCP_KI_Cyto"
+  - "Ml240_VCP_KI_Cyto"
+  - "Untreated_VCP_KI_Nuc"
+  - "Ml240_VCP_KI_Nuc"
+  - "Untreated_WT_Cyto"
+  - "Untreated_WT_Nuc"
+# Line color per condition (treatment name without the compartment suffix)
+palette_conditions:
+  Untreated_WT: "#2d609a"
+  Untreated_VCP_KI: "#8b1a5c"
+  Ml240_VCP_KI: "steelblue"

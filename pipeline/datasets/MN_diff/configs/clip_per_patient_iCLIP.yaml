@@ -1,0 +1,106 @@
+filepath_to_gtf_isoforms: "${ANNOT_DIR}/3UTR_MNs/hg38_Denovo_Ensembl_RefSeq_Filt_Reformat.gtf"
+filepath_to_table_of_pairs: "${RESULTS_DIR}/3UTR_analysis/table_of_pairs.csv"
+path_to_results: "${RESULTS_DIR}/3UTR_analysis/CLIP_per_patient"
+split_name_before: '_'
+split_number_before: 2
+split_name_after: 'hg38'
+split_number_after: 1
+treatments:
+  - CTRL1_D0_Nuclear_Wildtype
+  - CTRL3_D0_Nuclear_Wildtype
+  - CTRL4_D0_Nuclear_Wildtype
+  - CTRL5_D0_Nuclear_Wildtype
+  - MUT1_D0_Nuclear_VCP-R155C
+  - MUT3_D0_Nuclear_VCP-R191Q
+  - MUT4_D0_Nuclear_VCP-R191Q
+  - CTRL1_D0_Cytoplasmic_Wildtype
+  - CTRL3_D0_Cytoplasmic_Wildtype
+  - CTRL4_D0_Cytoplasmic_Wildtype
+  - CTRL5_D0_Cytoplasmic_Wildtype
+  - MUT1_D0_Cytoplasmic_VCP-R155C
+  - MUT2_D0_Cytoplasmic_VCP-R155C
+  - MUT3_D0_Cytoplasmic_VCP-R191Q
+  - MUT4_D0_Cytoplasmic_VCP-R191Q
+  - CTRL3_D3_Nuclear_Wildtype
+  - CTRL4_D3_Nuclear_Wildtype
+  - CTRL5_D3_Nuclear_Wildtype
+  - MUT1_D3_Nuclear_VCP-R155C
+  - MUT2_D3_Nuclear_VCP-R155C
+  - MUT3_D3_Nuclear_VCP-R191Q
+  - MUT4_D3_Nuclear_VCP-R191Q
+  - CTRL1_D3_Cytoplasmic_Wildtype
+  - CTRL3_D3_Cytoplasmic_Wildtype
+  - CTRL4_D3_Cytoplasmic_Wildtype
+  - CTRL5_D3_Cytoplasmic_Wildtype
+  - MUT1_D3_Cytoplasmic_VCP-R155C
+  - MUT2_D3_Cytoplasmic_VCP-R155C
+  - MUT3_D3_Cytoplasmic_VCP-R191Q
+  - MUT4_D3_Cytoplasmic_VCP-R191Q
+  - CTRL1_D7_Nuclear_Wildtype
+  - CTRL3_D7_Nuclear_Wildtype
+  - CTRL4_D7_Nuclear_Wildtype
+  - CTRL5_D7_Nuclear_Wildtype
+  - MUT1_D7_Nuclear_VCP-R155C
+  - MUT2_D7_Nuclear_VCP-R155C
+  - MUT3_D7_Nuclear_VCP-R191Q
+  - MUT4_D7_Nuclear_VCP-R191Q
+  - CTRL3_D7_Cytoplasmic_Wildtype
+  - CTRL4_D7_Cytoplasmic_Wildtype
+  - CTRL5_D7_Cytoplasmic_Wildtype
+  - MUT1_D7_Cytoplasmic_VCP-R155C
+  - MUT2_D7_Cytoplasmic_VCP-R155C
+  - MUT3_D7_Cytoplasmic_VCP-R191Q
+  - MUT4_D7_Cytoplasmic_VCP-R191Q
+  - CTRL1_D14_Nuclear_Wildtype
+  - CTRL3_D14_Nuclear_Wildtype
+  - CTRL4_D14_Nuclear_Wildtype
+  - CTRL5_D14_Nuclear_Wildtype
+  - MUT1_D14_Nuclear_VCP-R155C
+  - MUT2_D14_Nuclear_VCP-R155C
+  - MUT3_D14_Nuclear_VCP-R191Q
+  - MUT4_D14_Nuclear_VCP-R191Q
+  - CTRL1_D14_Cytoplasmic_Wildtype
+  - CTRL3_D14_Cytoplasmic_Wildtype
+  - CTRL4_D14_Cytoplasmic_Wildtype
+  - CTRL5_D14_Cytoplasmic_Wildtype
+  - MUT1_D14_Cytoplasmic_VCP-R155C
+  - MUT2_D14_Cytoplasmic_VCP-R155C
+  - MUT3_D14_Cytoplasmic_VCP-R191Q
+  - MUT4_D14_Cytoplasmic_VCP-R191Q
+  - CTRL1_D22_Nuclear_Wildtype
+  - CTRL3_D22_Nuclear_Wildtype
+  - CTRL4_D22_Nuclear_Wildtype
+  - CTRL5_D22_Nuclear_Wildtype
+  - MUT1_D22_Nuclear_VCP-R155C
+  - MUT2_D22_Nuclear_VCP-R155C
+  - MUT3_D22_Nuclear_VCP-R191Q
+  - MUT4_D22_Nuclear_VCP-R191Q
+  - CTRL1_D22_Cytoplasmic_Wildtype
+  - CTRL3_D22_Cytoplasmic_Wildtype
+  - CTRL4_D22_Cytoplasmic_Wildtype
+  - CTRL5_D22_Cytoplasmic_Wildtype
+  - MUT1_D22_Cytoplasmic_VCP-R155C
+  - MUT2_D22_Cytoplasmic_VCP-R155C
+  - MUT3_D22_Cytoplasmic_VCP-R191Q
+  - MUT4_D22_Cytoplasmic_VCP-R191Q
+  - CTRL1_D35_Nuclear_Wildtype
+  - CTRL3_D35_Nuclear_Wildtype
+  - CTRL4_D35_Nuclear_Wildtype
+  - CTRL5_D35_Nuclear_Wildtype
+  - MUT1_D35_Nuclear_VCP-R155C
+  - MUT2_D35_Nuclear_VCP-R155C
+  - MUT3_D35_Nuclear_VCP-R191Q
+  - MUT4_D35_Nuclear_VCP-R191Q
+  - CTRL3_D35_Cytoplasmic_Wildtype
+  - CTRL4_D35_Cytoplasmic_Wildtype
+  - CTRL5_D35_Cytoplasmic_Wildtype
+  - MUT1_D35_Cytoplasmic_VCP-R155C
+  - MUT2_D35_Cytoplasmic_VCP-R155C
+  - MUT3_D35_Cytoplasmic_VCP-R191Q
+  - MUT4_D35_Cytoplasmic_VCP-R191Q
+nt_before: -1000
+nt_after: 200
+length_region: 50
+bootstrap: False
+only_long: True
+

@@ -1,0 +1,112 @@
+filepath_to_gtf_isoforms: "${ANNOT_DIR}/3UTR_MNs/hg38_Denovo_Ensembl_RefSeq_Filt_Reformat.gtf"
+filepath_to_table_of_pairs: "${RESULTS_DIR}/3UTR_analysis/table_of_pairs_simplified.csv"
+path_to_results: "${RESULTS_DIR}/3UTR_analysis/CLIP"
+split_name_before: '_'
+split_number_before: 2
+split_name_after: 'hg38'
+split_number_after: 1
+treatments:
+  - Untreated_Cyto
+  - Scramble_Cyto
+  - SFPQ_KD_Cyto
+  - TDP43_KD_Cyto
+  - FUS_KD_Cyto
+  - Untreated_Nuc
+  - Scramble_Nuc
+  - SFPQ_KD_Nuc
+  - TDP43_KD_Nuc
+  - FUS_KD_Nuc
+filepath_to_sig_pairs: 
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_FUS_KD_Cyto_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_FUS_KD_Cyto_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_FUS_KD_Cyto_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_FUS_KD_Cyto_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_FUS_KD_Cyto_vs_Untreated_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Scramble_Cyto_vs_FUS_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Scramble_Cyto_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Scramble_Cyto_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Scramble_Cyto_vs_SFPQ_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Scramble_Cyto_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Scramble_Cyto_vs_TDP43_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Scramble_Cyto_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Scramble_Cyto_vs_Untreated_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Scramble_Nuc_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Scramble_Nuc_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Scramble_Nuc_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_SFPQ_KD_Cyto_vs_FUS_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_SFPQ_KD_Cyto_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_SFPQ_KD_Cyto_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_SFPQ_KD_Cyto_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_SFPQ_KD_Cyto_vs_TDP43_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_SFPQ_KD_Cyto_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_SFPQ_KD_Nuc_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_SFPQ_KD_Nuc_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_TDP43_KD_Cyto_vs_FUS_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_TDP43_KD_Cyto_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_TDP43_KD_Cyto_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_TDP43_KD_Cyto_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_TDP43_KD_Cyto_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_TDP43_KD_Cyto_vs_Untreated_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_TDP43_KD_Nuc_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Cyto_vs_FUS_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Cyto_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Cyto_vs_Scramble_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Cyto_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Cyto_vs_SFPQ_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Cyto_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Cyto_vs_TDP43_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Cyto_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Cyto_vs_Untreated_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Nuc_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Nuc_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Nuc_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_Nuc_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_FUS_KD_Cyto_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_FUS_KD_Cyto_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_FUS_KD_Cyto_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_FUS_KD_Cyto_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_FUS_KD_Cyto_vs_Untreated_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Scramble_Cyto_vs_FUS_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Scramble_Cyto_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Scramble_Cyto_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Scramble_Cyto_vs_SFPQ_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Scramble_Cyto_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Scramble_Cyto_vs_TDP43_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Scramble_Cyto_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Scramble_Cyto_vs_Untreated_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Scramble_Nuc_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Scramble_Nuc_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Scramble_Nuc_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_SFPQ_KD_Cyto_vs_FUS_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_SFPQ_KD_Cyto_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_SFPQ_KD_Cyto_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_SFPQ_KD_Cyto_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_SFPQ_KD_Cyto_vs_TDP43_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_SFPQ_KD_Cyto_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_SFPQ_KD_Nuc_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_SFPQ_KD_Nuc_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_TDP43_KD_Cyto_vs_FUS_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_TDP43_KD_Cyto_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_TDP43_KD_Cyto_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_TDP43_KD_Cyto_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_TDP43_KD_Cyto_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_TDP43_KD_Cyto_vs_Untreated_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_TDP43_KD_Nuc_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Cyto_vs_FUS_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Cyto_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Cyto_vs_Scramble_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Cyto_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Cyto_vs_SFPQ_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Cyto_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Cyto_vs_TDP43_KD_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Cyto_vs_TDP43_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Cyto_vs_Untreated_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Nuc_vs_FUS_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Nuc_vs_Scramble_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Nuc_vs_SFPQ_KD_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_Nuc_vs_TDP43_KD_Nuc.csv"
+nt_before: -1000
+nt_after: 200
+length_region: 50
+bootstrap: False
+only_long: True

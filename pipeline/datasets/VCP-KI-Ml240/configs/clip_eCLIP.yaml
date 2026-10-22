@@ -1,0 +1,38 @@
+filepath_to_gtf_isoforms: "${ANNOT_DIR}/3UTR_MNs/hg38_Denovo_Ensembl_RefSeq_Filt_Reformat.gtf"
+filepath_to_table_of_pairs: "${RESULTS_DIR}/3UTR_analysis/table_of_pairs_simplified.csv"
+path_to_results: "${RESULTS_DIR}/3UTR_analysis/CLIP"
+split_name_after: '_ENC'
+split_name_before: ''
+split_number_before: 1
+split_number_after: 1
+filepath_to_sig_pairs: 
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_VCP_KI_Cyto_vs_Ml240_VCP_KI_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_VCP_KI_Nuc_vs_Ml240_VCP_KI_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_WT_Cyto_vs_Untreated_VCP_KI_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_Untreated_WT_Nuc_vs_Untreated_VCP_KI_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_VCP_KI_Cyto_vs_Ml240_VCP_KI_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_VCP_KI_Nuc_vs_Ml240_VCP_KI_Nuc.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_WT_Cyto_vs_Untreated_VCP_KI_Cyto.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_Untreated_WT_Nuc_vs_Untreated_VCP_KI_Nuc.csv"
+treatments:
+  - "Untreated_TDP43_Cyto"
+  - "Ml240_TDP43_Cyto"
+  - "Untreated_TDP43_Nuc"
+  - "Ml240_TDP43_Nuc"
+  - "Untreated_VCP_Cyto"
+  - "Ml240_VCP_Cyto"
+  - "Untreated_VCP_KI_Cyto"
+  - "Ml240_VCP_KI_Cyto"
+  - "Untreated_VCP_KI_Nuc"
+  - "Ml240_VCP_KI_Nuc"
+  - "Untreated_VCP_Nuc"
+  - "Ml240_VCP_Nuc"
+  - "Untreated_WT_Cyto"
+  - "Ml240_WT_Cyto"
+  - "Untreated_WT_Nuc"
+  - "Ml240_WT_Nuc"
+nt_before: -1000
+nt_after: 200
+length_region: 50
+bootstrap: False
+only_long: True

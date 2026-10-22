@@ -1,0 +1,11 @@
+class,category,term,description,number_of_genes,number_of_genes_in_background,strength,signal,fdr,inputGenes
+APA,Process,GO:0010608,Post-transcriptional regulation of gene expression,4,500,1.4164407858,1.50973464645,0.0242,"['IGF2BP1', 'FXR1', 'FTO', 'DDX6']"
+APA,Process,GO:0017148,Negative regulation of translation,3,130,1.87652870122,1.73665374802,0.0242,"['IGF2BP1', 'FXR1', 'DDX6']"
+Nuclear retention,Process,GO:1903311,Regulation of mRNA metabolic process,7,316,1.59552032143,2.52134602918,9.84e-07,"['PUM2', 'ELAVL1', 'TIA1', 'IGF2BP2', 'CELF4', 'HNRNPC', 'CELF2']"
+Nuclear retention,Process,GO:0010608,Post-transcriptional regulation of gene expression,7,500,1.39623739971,2.17491126452,1.21e-05,"['PUM2', 'ELAVL1', 'TIA1', 'IGF2BP2', 'CELF4', 'EIF4E', 'HNRNPC']"
+Nuclear retention,Process,GO:0060964,Regulation of miRNA-mediated gene silencing,3,27,2.29586685459,2.71718850039,0.00047,"['PUM2', 'TIAL1', 'ELAVL1']"
+Nuclear retention,Process,GO:0017148,Negative regulation of translation,4,130,1.73822600305,2.27524495016,0.00051,"['TIA1', 'IGF2BP2', 'CELF4', 'EIF4E']"
+Nuclear retention,Process,GO:0006403,RNA localization,4,177,1.604196089,2.06215598914,0.0013,"['RTRAF', 'FUBP3', 'IGF2BP2', 'EIF4E']"
+Nuclear retention,Process,GO:0000381,"Regulation of alternative mRNA splicing, via spliceosome",3,69,1.88838152801,2.17659676355,0.0027,"['TIA1', 'CELF4', 'CELF2']"
+Nuclear retention,Process,GO:0048255,mRNA stabilization,3,69,1.88838152801,2.17659676355,0.0027,"['ELAVL1', 'IGF2BP2', 'HNRNPC']"
+Nuclear retention,Process,GO:0034063,Stress granule assembly,2,27,2.11977559554,1.86921130318,0.0213,"['PUM2', 'TIA1']"

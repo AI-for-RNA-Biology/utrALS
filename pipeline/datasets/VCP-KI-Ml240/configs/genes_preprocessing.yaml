@@ -1,0 +1,74 @@
+data_origin: kallisto_whole_transcriptome
+df_counts_path: "${DATA_DIR}/hg38_kallisto"
+gene_names_path: "${ANNOT_DIR}/GENCODE/Gencode_geneNames_hg38V44.txt"
+gene_info_path: "${ANNOT_DIR}/Homo_sapiens.gene_info"
+treatments:
+  Ml240_TDP43_Cyto:
+    - "SRR21683985"
+    - "SRR21683986"
+  Untreated_TDP43_Cyto:
+    - "SRR21684008"
+    - "SRR21684009"
+  Ml240_TDP43_Nuc:
+    - "SRR21683997"
+    - "SRR21683998"
+  Untreated_TDP43_Nuc:
+    - "SRR21684020"
+    - "SRR21684021"
+  Ml240_VCP_KI_Cyto:
+    - "SRR21683987"
+    - "SRR21683988"
+  Untreated_VCP_KI_Cyto:
+    - "SRR21684010"
+    - "SRR21684011"
+  Ml240_VCP_KI_Nuc:
+    - "SRR21683999"
+  Untreated_VCP_KI_Nuc:
+    - "SRR21684022"
+    - "SRR21684023"
+  Ml240_VCP_Cyto:
+    - "SRR21683989"
+    - "SRR21683990"
+    - "SRR21683991"
+    - "SRR21683992"
+  Untreated_VCP_Cyto:
+    - "SRR21684012"
+    - "SRR21684013"
+    - "SRR21684014"
+    - "SRR21684015"
+  Ml240_VCP_Nuc:
+    - "SRR21684000"
+    - "SRR21684001"
+    - "SRR21684002"
+    - "SRR21684003"
+  Untreated_VCP_Nuc:
+    - "SRR21684024"
+    - "SRR21684025"
+    - "SRR21684026"
+    - "SRR21684027"
+  Ml240_WT_Cyto:
+    - "SRR21683993"
+    - "SRR21683994"
+    - "SRR21683995"
+    - "SRR21683996"
+  Untreated_WT_Cyto:
+    - "SRR21684016"
+    - "SRR21684017"
+    - "SRR21684018"
+    - "SRR21684019"
+  Ml240_WT_Nuc:
+    - "SRR21684004"
+    - "SRR21684005"
+    - "SRR21684006"
+    - "SRR21684007"
+  Untreated_WT_Nuc:
+    - "SRR21684028"
+    - "SRR21684029"
+    - "SRR21684030"
+    - "SRR21684031"
+path_to_results: "${RESULTS_DIR}/genes_preprocessing"
+figures_extension: "pdf"
+pct_in_treatment: 0.75
+remove_outliers: False
+
+

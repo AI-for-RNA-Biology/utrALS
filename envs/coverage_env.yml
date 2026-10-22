@@ -1,0 +1,8 @@
+# samtools: check of the STAR BAM files (pipeline).
+name: coverage_env
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - samtools=1.23.1

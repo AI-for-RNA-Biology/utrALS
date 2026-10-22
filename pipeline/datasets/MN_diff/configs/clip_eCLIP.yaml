@@ -1,0 +1,121 @@
+filepath_to_gtf_isoforms: "${ANNOT_DIR}/3UTR_MNs/hg38_Denovo_Ensembl_RefSeq_Filt_Reformat.gtf"
+filepath_to_table_of_pairs: "${RESULTS_DIR}/3UTR_analysis/table_of_pairs.csv"
+path_to_results: "${RESULTS_DIR}/3UTR_analysis/CLIP"
+split_name_after: '_ENC'
+split_name_before: ''
+split_number_before: 1
+split_number_after: 1
+filepath_to_sig_pairs: 
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_Wildtype_vs_D3_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_Wildtype_vs_D7_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_Wildtype_vs_D14_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_Wildtype_vs_D22_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_Wildtype_vs_D35_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_Wildtype_vs_D3_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_Wildtype_vs_D7_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_Wildtype_vs_D14_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_Wildtype_vs_D22_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_Wildtype_vs_D35_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_Wildtype_vs_D3_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_Wildtype_vs_D7_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_Wildtype_vs_D14_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_Wildtype_vs_D22_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_Wildtype_vs_D35_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_Wildtype_vs_D3_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_Wildtype_vs_D7_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_Wildtype_vs_D14_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_Wildtype_vs_D22_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_Wildtype_vs_D35_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_VCP_vs_D3_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_VCP_vs_D7_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_VCP_vs_D14_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_VCP_vs_D22_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_VCP_vs_D35_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_VCP_vs_D3_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_VCP_vs_D7_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_VCP_vs_D14_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_VCP_vs_D22_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_VCP_vs_D35_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_VCP_vs_D3_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_VCP_vs_D7_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_VCP_vs_D14_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_VCP_vs_D22_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_VCP_vs_D35_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_VCP_vs_D3_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_VCP_vs_D7_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_VCP_vs_D14_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_VCP_vs_D22_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_VCP_vs_D35_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D35_Nuclear_Wildtype_vs_D35_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D35_Nuclear_Wildtype_vs_D35_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_Wildtype_vs_D3_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_Wildtype_vs_D3_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D3_Nuclear_Wildtype_vs_D7_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D3_Nuclear_Wildtype_vs_D7_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D7_Nuclear_Wildtype_vs_D14_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D7_Nuclear_Wildtype_vs_D14_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D14_Nuclear_Wildtype_vs_D22_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D14_Nuclear_Wildtype_vs_D22_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D22_Nuclear_Wildtype_vs_D35_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D22_Nuclear_Wildtype_vs_D35_Nuclear_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Nuclear_VCP_vs_D3_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Nuclear_VCP_vs_D3_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D3_Nuclear_VCP_vs_D7_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D3_Nuclear_VCP_vs_D7_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D7_Nuclear_VCP_vs_D14_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D7_Nuclear_VCP_vs_D14_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D14_Nuclear_VCP_vs_D22_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D14_Nuclear_VCP_vs_D22_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D22_Nuclear_VCP_vs_D35_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D22_Nuclear_VCP_vs_D35_Nuclear_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_Wildtype_vs_D3_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_Wildtype_vs_D3_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D3_Cytoplasmic_Wildtype_vs_D7_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D3_Cytoplasmic_Wildtype_vs_D7_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D7_Cytoplasmic_Wildtype_vs_D14_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D7_Cytoplasmic_Wildtype_vs_D14_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D14_Cytoplasmic_Wildtype_vs_D22_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D14_Cytoplasmic_Wildtype_vs_D22_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D22_Cytoplasmic_Wildtype_vs_D35_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D22_Cytoplasmic_Wildtype_vs_D35_Cytoplasmic_Wildtype.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D0_Cytoplasmic_VCP_vs_D3_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D0_Cytoplasmic_VCP_vs_D3_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D3_Cytoplasmic_VCP_vs_D7_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D3_Cytoplasmic_VCP_vs_D7_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D7_Cytoplasmic_VCP_vs_D14_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D7_Cytoplasmic_VCP_vs_D14_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D14_Cytoplasmic_VCP_vs_D22_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D14_Cytoplasmic_VCP_vs_D22_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D22_Cytoplasmic_VCP_vs_D35_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_distals_D22_Cytoplasmic_VCP_vs_D35_Cytoplasmic_VCP.csv"
+  - "${RESULTS_DIR}/3UTR_analysis/shifts/pairs_proximals_D35_Nuclear_Wildtype_vs_D35_Cytoplasmic_Wildtype.csv"
+treatments:
+  - D0_Cytoplasmic_VCP
+  - D0_Cytoplasmic_Wildtype
+  - D0_Nuclear_VCP
+  - D0_Nuclear_Wildtype
+  - D3_Cytoplasmic_VCP
+  - D3_Cytoplasmic_Wildtype
+  - D3_Nuclear_VCP
+  - D3_Nuclear_Wildtype
+  - D7_Cytoplasmic_VCP
+  - D7_Cytoplasmic_Wildtype
+  - D7_Nuclear_VCP
+  - D7_Nuclear_Wildtype
+  - D14_Cytoplasmic_VCP
+  - D14_Cytoplasmic_Wildtype
+  - D14_Nuclear_VCP
+  - D14_Nuclear_Wildtype
+  - D22_Cytoplasmic_VCP
+  - D22_Cytoplasmic_Wildtype
+  - D22_Nuclear_VCP
+  - D22_Nuclear_Wildtype
+  - D35_Cytoplasmic_VCP
+  - D35_Cytoplasmic_Wildtype
+  - D35_Nuclear_VCP
+  - D35_Nuclear_Wildtype
+nt_before: -1000
+nt_after: 200
+length_region: 50
+bootstrap: False
+only_long: True

@@ -1,0 +1,56 @@
+df_counts_3UTR_path: "${DATA_DIR}/myUTRs_hg38/df_counts.csv"
+gtf_file_focus: "${ANNOT_DIR}/3UTR_MNs/hg38_NoOverlap.gtf"
+gtf_file_no_focus: "${ANNOT_DIR}/3UTR_MNs/hg38_Denovo_Ensembl_RefSeq_Filt_Reformat.gtf"
+df_filtered_genes_path: "${RESULTS_DIR}/genes_preprocessing/df_genes_filtered_normalized.csv"
+figures_extension: "pdf"
+pct_in_treatment: 0.75
+quantile_threshold: 0.95
+background_quantile: True
+treatments:
+  Untreated_Cyto: 
+    - 'TYZ4001A1'
+    - 'TYZ4001A11'
+    - 'TYZ4001A6'
+  Scramble_Cyto:
+    - 'TYZ4001A12'
+    - 'TYZ4001A2'
+    - 'TYZ4001A7'
+  SFPQ_KD_Cyto:
+    - 'TYZ4001A13'
+    - 'TYZ4001A3'
+    - 'TYZ4001A8'
+  TDP43_KD_Cyto:
+    - 'TYZ4001A14'
+    - 'TYZ4001A4'
+    - 'TYZ4001A9'
+  FUS_KD_Cyto: 
+    - 'TYZ4001A10'
+    - 'TYZ4001A15'
+    - 'TYZ4001A5'
+  Untreated_Nuc: 
+    - 'TYZ4001A16'
+    - 'TYZ4001A21'
+    - 'TYZ4001A26'
+  Scramble_Nuc:
+    - 'TYZ4001A17'
+    - 'TYZ4001A22'
+    - 'TYZ4001A27'
+  SFPQ_KD_Nuc:
+    - 'TYZ4001A18'
+    - 'TYZ4001A23'
+    - 'TYZ4001A28'
+  TDP43_KD_Nuc:
+    - 'TYZ4001A19'
+    - 'TYZ4001A24'
+    - 'TYZ4001A29'
+  FUS_KD_Nuc: 
+    - 'TYZ4001A20'
+    - 'TYZ4001A25'
+    - 'TYZ4001A30'  
+path_to_results: "${RESULTS_DIR}/3UTR_analysis"
+thresh_FDR: 0.01
+thresh_pval: 0.05
+thresh_PUD: 0.15
+thresh_RUD: 1
+remove_outliers: False
+keep_only_long: True

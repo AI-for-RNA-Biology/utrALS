@@ -1,0 +1,91 @@
+group,region,dinucleotide,n_lengthening,n_other,n_windows,mean_signed_log10p
+Longer over time (nucleus),R1,AU,2481,5396,7,7.64587091452
+Longer over time (nucleus),R1,GC,2481,5396,7,-7.71838303567
+Longer over time (nucleus),R1,GU,2481,5396,7,1.11916089372
+Longer over time (nucleus),R1,GA,2481,5396,7,1.98687606695
+Longer over time (nucleus),R1,AC,2481,5396,7,1.41025917564
+Longer over time (nucleus),R1,CU,2481,5396,7,-3.34954254151
+Longer over time (nucleus),R1,AA,2481,5396,7,9.59737058517
+Longer over time (nucleus),R1,UU,2481,5396,7,7.81607404904
+Longer over time (nucleus),R1,CC,2481,5396,7,-29.4035528253
+Longer over time (nucleus),R1,GG,2481,5396,7,-15.1435317554
+Longer over time (nucleus),R2,AU,2481,5396,4,40.3552707746
+Longer over time (nucleus),R2,GC,2481,5396,4,-29.4954789532
+Longer over time (nucleus),R2,GU,2481,5396,4,1.40630069786
+Longer over time (nucleus),R2,GA,2481,5396,4,-0.774977404805
+Longer over time (nucleus),R2,AC,2481,5396,4,-0.296334682921
+Longer over time (nucleus),R2,CU,2481,5396,4,-10.8470336429
+Longer over time (nucleus),R2,AA,2481,5396,4,34.8566586306
+Longer over time (nucleus),R2,UU,2481,5396,4,68.7558122358
+Longer over time (nucleus),R2,CC,2481,5396,4,-78.4619716851
+Longer over time (nucleus),R2,GG,2481,5396,4,-51.5714975401
+Longer over time (nucleus),R3,AU,2481,5396,7,46.1894915468
+Longer over time (nucleus),R3,GC,2481,5396,7,-35.8469952689
+Longer over time (nucleus),R3,GU,2481,5396,7,2.67220797668
+Longer over time (nucleus),R3,GA,2481,5396,7,-3.77159212203
+Longer over time (nucleus),R3,AC,2481,5396,7,-1.77842933264
+Longer over time (nucleus),R3,CU,2481,5396,7,-9.46339552159
+Longer over time (nucleus),R3,AA,2481,5396,7,41.9362413125
+Longer over time (nucleus),R3,UU,2481,5396,7,74.8208936582
+Longer over time (nucleus),R3,CC,2481,5396,7,-92.0511061679
+Longer over time (nucleus),R3,GG,2481,5396,7,-72.4116547086
+Longer over time (cytoplasm),R1,AU,271,7606,7,2.56042575546
+Longer over time (cytoplasm),R1,GC,271,7606,7,-2.48913356567
+Longer over time (cytoplasm),R1,GU,271,7606,7,-0.0102899751177
+Longer over time (cytoplasm),R1,GA,271,7606,7,-0.408067443108
+Longer over time (cytoplasm),R1,AC,271,7606,7,0.0830740634161
+Longer over time (cytoplasm),R1,CU,271,7606,7,-0.278727897558
+Longer over time (cytoplasm),R1,AA,271,7606,7,2.78259689429
+Longer over time (cytoplasm),R1,UU,271,7606,7,3.16962317753
+Longer over time (cytoplasm),R1,CC,271,7606,7,-4.42812894302
+Longer over time (cytoplasm),R1,GG,271,7606,7,-3.7208550879
+Longer over time (cytoplasm),R2,AU,271,7606,4,1.86365685399
+Longer over time (cytoplasm),R2,GC,271,7606,4,-1.21209129621
+Longer over time (cytoplasm),R2,GU,271,7606,4,-0.265757620561
+Longer over time (cytoplasm),R2,GA,271,7606,4,0.854091381582
+Longer over time (cytoplasm),R2,AC,271,7606,4,0.623764504002
+Longer over time (cytoplasm),R2,CU,271,7606,4,-0.800254556694
+Longer over time (cytoplasm),R2,AA,271,7606,4,5.17198815082
+Longer over time (cytoplasm),R2,UU,271,7606,4,-0.21276891282
+Longer over time (cytoplasm),R2,CC,271,7606,4,-5.24539329237
+Longer over time (cytoplasm),R2,GG,271,7606,4,-1.34789692816
+Longer over time (cytoplasm),R3,AU,271,7606,7,1.50295304882
+Longer over time (cytoplasm),R3,GC,271,7606,7,-0.994073622813
+Longer over time (cytoplasm),R3,GU,271,7606,7,-0.135442995207
+Longer over time (cytoplasm),R3,GA,271,7606,7,0.68122838372
+Longer over time (cytoplasm),R3,AC,271,7606,7,-0.101306723362
+Longer over time (cytoplasm),R3,CU,271,7606,7,-0.844205641992
+Longer over time (cytoplasm),R3,AA,271,7606,7,2.27682847406
+Longer over time (cytoplasm),R3,UU,271,7606,7,-0.167246981214
+Longer over time (cytoplasm),R3,CC,271,7606,7,-2.77832446503
+Longer over time (cytoplasm),R3,GG,271,7606,7,-1.01464354503
+Longer in nucleus than cytoplasm (D35),R1,AU,3899,3978,7,9.31293353598
+Longer in nucleus than cytoplasm (D35),R1,GC,3899,3978,7,-7.30115936811
+Longer in nucleus than cytoplasm (D35),R1,GU,3899,3978,7,1.62369897601
+Longer in nucleus than cytoplasm (D35),R1,GA,3899,3978,7,2.45960149595
+Longer in nucleus than cytoplasm (D35),R1,AC,3899,3978,7,2.45980414477
+Longer in nucleus than cytoplasm (D35),R1,CU,3899,3978,7,-3.84230273778
+Longer in nucleus than cytoplasm (D35),R1,AA,3899,3978,7,7.94340382894
+Longer in nucleus than cytoplasm (D35),R1,UU,3899,3978,7,4.28954933826
+Longer in nucleus than cytoplasm (D35),R1,CC,3899,3978,7,-26.4001230383
+Longer in nucleus than cytoplasm (D35),R1,GG,3899,3978,7,-18.2984126354
+Longer in nucleus than cytoplasm (D35),R2,AU,3899,3978,4,38.3290985611
+Longer in nucleus than cytoplasm (D35),R2,GC,3899,3978,4,-27.1437047872
+Longer in nucleus than cytoplasm (D35),R2,GU,3899,3978,4,0.775949815908
+Longer in nucleus than cytoplasm (D35),R2,GA,3899,3978,4,-1.31280658965
+Longer in nucleus than cytoplasm (D35),R2,AC,3899,3978,4,0.0990906960007
+Longer in nucleus than cytoplasm (D35),R2,CU,3899,3978,4,-7.79885895496
+Longer in nucleus than cytoplasm (D35),R2,AA,3899,3978,4,26.4634250444
+Longer in nucleus than cytoplasm (D35),R2,UU,3899,3978,4,82.2971638043
+Longer in nucleus than cytoplasm (D35),R2,CC,3899,3978,4,-72.3478208992
+Longer in nucleus than cytoplasm (D35),R2,GG,3899,3978,4,-61.6595068016
+Longer in nucleus than cytoplasm (D35),R3,AU,3899,3978,7,57.8384349232
+Longer in nucleus than cytoplasm (D35),R3,GC,3899,3978,7,-44.4525972696
+Longer in nucleus than cytoplasm (D35),R3,GU,3899,3978,7,4.43873558599
+Longer in nucleus than cytoplasm (D35),R3,GA,3899,3978,7,-5.52313643646
+Longer in nucleus than cytoplasm (D35),R3,AC,3899,3978,7,-1.58454181023
+Longer in nucleus than cytoplasm (D35),R3,CU,3899,3978,7,-11.2174283825
+Longer in nucleus than cytoplasm (D35),R3,AA,3899,3978,7,44.0077363886
+Longer in nucleus than cytoplasm (D35),R3,UU,3899,3978,7,100.74890366
+Longer in nucleus than cytoplasm (D35),R3,CC,3899,3978,7,-105.382069052
+Longer in nucleus than cytoplasm (D35),R3,GG,3899,3978,7,-91.3973347586

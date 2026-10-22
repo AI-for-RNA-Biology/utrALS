@@ -1,0 +1,57 @@
+# CLIP Analysis Pipeline Configuration
+
+# Input paths
+path_to_processed_RBPs: "${RESULTS_DIR}/3UTR_analysis/CLIP"
+
+# Output directory
+output_directory: "${RESULTS_DIR}/3UTR_analysis/CLIP/analysis_FUS"
+
+# Analysis parameters
+nb_nucleotides_upstream: -1000
+nb_nucleotides_downstream: 200
+length_region: 50
+# window of the stop codon integration (clip_stop_codon_integration)
+stop_codon_nb_nucleotides_upstream: -100
+stop_codon_length_region: 25
+
+
+
+# Treatment conditions
+treatments:
+  - Untreated_Cyto
+  - Scramble_Cyto
+  - FUS_KD_Cyto
+  - Untreated_Nuc
+  - Scramble_Nuc
+  - FUS_KD_Nuc
+
+# Color palette for treatments
+palette:
+  Untreated_Cyto: "#525050"
+  Scramble_Cyto: "#27009d"
+  FUS_KD_Cyto: "#ff1e1e"
+  Untreated_Nuc: "#a8a8a8"
+  Scramble_Nuc: "#6E3FFAFF"
+  FUS_KD_Nuc: "#ff6c6c"
+
+pairs_for_heatmaps:
+  - "pairs_distals_Scramble_Cyto_vs_FUS_KD_Cyto"
+  - "pairs_distals_Scramble_Nuc_vs_FUS_KD_Nuc"
+  - "pairs_distals_Untreated_Cyto_vs_FUS_KD_Cyto"
+  - "pairs_distals_Untreated_Nuc_vs_FUS_KD_Nuc"
+  - "pairs_proximals_Scramble_Cyto_vs_FUS_KD_Cyto"
+  - "pairs_proximals_Scramble_Nuc_vs_FUS_KD_Nuc"
+  - "pairs_proximals_Untreated_Cyto_vs_FUS_KD_Cyto"
+  - "pairs_proximals_Untreated_Nuc_vs_FUS_KD_Nuc"
+
+pairs_for_profiles:
+  - "pairs_distals_Untreated_Cyto_vs_FUS_KD_Cyto"
+  - "pairs_distals_Untreated_Nuc_vs_FUS_KD_Nuc"
+  - "pairs_proximals_Untreated_Cyto_vs_FUS_KD_Cyto"
+  - "pairs_proximals_Untreated_Nuc_vs_FUS_KD_Nuc"
+
+palette_pairs:
+  pairs_distals_Untreated_Cyto_vs_FUS_KD_Cyto: "#2ca02c"
+  pairs_distals_Untreated_Nuc_vs_FUS_KD_Nuc: "#DA0B9C"
+  pairs_proximals_Untreated_Cyto_vs_FUS_KD_Cyto: "#affca4"
+  pairs_proximals_Untreated_Nuc_vs_FUS_KD_Nuc: "#F58BD6FF"

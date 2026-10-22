@@ -1,0 +1,8 @@
+# sra-tools: download of the public FASTQ files with fasterq-dump (pipeline).
+name: sra_download
+channels:
+  - conda-forge
+  - bioconda
+  - nodefaults
+dependencies:
+  - sra-tools=3.2.1
