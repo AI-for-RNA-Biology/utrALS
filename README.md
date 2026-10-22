@@ -1,11 +1,9 @@
 # utrALS
 
-Code behind the paper figures on RNA-binding protein (RBP) binding in 3′ UTRs in ALS: alternative polyadenylation
-(APA) of 3′ UTR isoforms in nuclear and cytoplasmic fractions of motor neurons, integrated with CLIP-seq, RNA
-modifications (m6A) and gene expression.
+**A developmentally programmed RNA regulatory code integrates 3′UTR structure, m6A and RNA-binding proteins in motor neuron maturation and ALS**
 
-The repository holds the paper-figure notebooks and only the scripts needed to regenerate the results these
-notebooks read, plus the Welch profiles of the CLIP and RNA-modification analyses shown in the paper.
+
+The repository holds the paper analyses and figures.
 
 ---
 
@@ -19,8 +17,7 @@ cp paths.env.example paths.env      # then set DATA_ROOT in paths.env
 `DATA_ROOT` (the root of the data storage) is its only absolute path, and every other location (`PROJECT_DIR`, the
 project folder holding the results; `ANNOT_DIR`; `CLIP_DIR`; ...) is relative to it. Adapt them in `paths.env` if your
 folders are organised differently, or export any of these variables to override it (e.g. `PROJECT_DIR=/my/scratch`). The notebooks and
-scripts read the locations through `utrals.paths`, the pipeline through `pipeline/config.sh`; no other file contains an
-absolute path.
+scripts read the locations through `utrals.paths`, the pipeline through `pipeline/config.sh`.
 
 Set up the software once (details in [`envs/`](envs/README.md) and Software below): create the conda environments,
 install the lab packages of [AI-for-RNA-Biology](https://github.com/AI-for-RNA-Biology) in `utrals`, and install this
@@ -52,38 +49,11 @@ for featureCounts and the m6A-switch scripts, `coverage_env` and `sra_download` 
 Besides public packages, the code needs these packages of the
 [AI-for-RNA-Biology](https://github.com/AI-for-RNA-Biology) GitHub organisation, all at their release `v0.2.0`, listed in
 [`envs/lab_packages.txt`](envs/lab_packages.txt) and installed in the `utrals` environment with
-`pip install --no-deps -r envs/lab_packages.txt` (`--no-deps`: the environment provides their dependencies, and their
-`pyproject.toml` files require each other from GitHub without a version, which pip cannot reconcile with the tags):
-
-| Package | What utrALS uses | Release |
-|---|---|---|
-| `apatools` | pipeline: `scripts/bulkapa.py` (3′ UTR isoform / APA analysis; `apatools.apanalysis`, `apatools.filtering`) and `scripts/clip_integration.py` (CLIP × APA integration) | `v0.2.0` |
-| `bulkanalysis` | pipeline: `scripts/genes_preprocessing.py` and `scripts/aggregate_featureCounts_output.py`; `bulkapa.py` also uses its `filtering`, `loader`, `normalization` and `plot` functions | `v0.2.0` |
-| `cliptools` | `cliptools.analysis.load_and_combine_integrated_CLIP` (`utrals.welch`, `scripts/clip/merge_welch*.py`, notebooks); `cliptools.processing` (region, cross-link, Fisher and bootstrap functions of `clip_integration.py`) | `v0.2.0` |
-| `genomemanager` | `gtf_utils.read_gtf` (`scripts/clip/gene_site_density.py`, `Figure_m6A_loading`, `Figure_m6A_nucleotide_content`); `overlaps.get_overlap_file` (through `bulkanalysis.filtering`) | `v0.2.0` |
-| `kallistomanager` | `loader.merge_kallisto_counts`, `loader.from_whole_transcriptome_quantification_to_coding_genes` (`bulkanalysis` / `bulkapa.py`, `scripts/counts/sum_genes_counts_across_replicates.py`) | `v0.2.0` |
-| `omicstools` | `OmicsDataset` (`perform_svd_analysis`, `pca`, `hierarchical_clustering`) and `helper_plot.plot_boxplot_significance`, in `Figure_3UTR_CTRL_vs_VCP` | `v0.2.0` |
-| `scanalysis` | `dimred.compute_svd_correlation`, `dimred.select_correlation_kmeans` (through `omicstools.OmicsDataset`) | `v0.2.0` |
-
-These are the packages and functions reached from the notebooks, `src/`, `scripts/` and the four library scripts run by
-the pipeline (static import trace, 2026-10-22). On this path, `v0.2.0` has the same code as the commits the results were
-produced with, except for two changes: the stop-codon option of `apatools`' `clip_integration.py` (used by the
-`*_stop_codon_integration` steps) and a fix of `readjust_treatments` in `bulkapa.py` and `genes_preprocessing.py`, which
-has no effect on these datasets (it only matters when a configured sample is missing from the count matrix).
-
-The command-line scripts of `apatools` and `bulkanalysis` are not installed with the packages: the pipeline runs them
-from clones of the two repositories (`REPOS_DIR`, at the `v0.2.0` commits of `pipeline/external_repos.tsv`;
-`bash pipeline/setup_external_repos.sh` clones them).
-
-One circular dependency: `notebooks/Figure_regulators_lengthening.ipynb` writes the candidate RBP lists
-(`Tables/Figure_regulators_lengthening/`) that the MN_diff m6A-switch steps of the pipeline read, and the
-`Figure_m6A_*` notebooks then read those steps' results. Run that notebook before the `m6a_regions` step.
-
----
+`pip install --no-deps -r envs/lab_packages.txt` 
 
 ## Repository structure
 
-Code is organised by role, not by dataset: the library is the `utrals` package, the command-line scripts run by the
+Code is organised by role. The library is the `utrals` package, the command-line scripts run by the
 pipeline are in `scripts/`, grouped by analysis stage, and what differs between datasets (samples, settings, configs)
 is in `pipeline/datasets/<dataset>/`.
 
